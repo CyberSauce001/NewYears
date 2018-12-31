@@ -159,12 +159,11 @@ def fireworks():
 def fireworks():
     t.penup()
     t.color("white")
-    t.goto(-300, -500)
     size = 10
     j = 0
     t.pen(pencolor="white", pensize=1)
     for c in range(3):
-        t.goto(-300+j, -500)
+        t.goto(-500+j, -500)
         for i in range(20):
             t.stamp()
             size = size + 2
@@ -182,15 +181,14 @@ def fireworks():
             t.left(59)
         t.setheading(90)
         size = 10
-        j+=10
+        j+= 250
         t.penup()
 
 date(t, -250,-300, 100, 50, 130)
-#stars()
+stars()
 fireworks()
 screen.mainloop()
 
-#define fireworks
 
 
 
